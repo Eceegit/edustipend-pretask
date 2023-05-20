@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body{
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Component 1 */
+.container{
+  height: 100vh;
+  background-color: #c9c7c7;
+  border: 2px solid #575454;
+}
+.header-box{
+  padding-top: 1rem;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.input-box{
+  border: 1px solid #575454;
+  max-width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  
+
+}
+
+input{
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.input-span{
+  margin-left: 3.5rem;
+}
+
+.input-btn{
+  margin-left: 1.5rem;
+  padding: 2px 15px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: orange;
+  border: 1px solid #575454;
+  border-radius: 5px;
+}
+@media screen and (min-width: 200px) and (max-width: 400px){
+  input{
+    width: 30%;
   }
+  .input-span{
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  .input-btn{
+    margin-left: 1.5rem;
+    padding: 2px 5px;
+    font-weight: 500;
+    font-size: 12px;
+   
+  }
+
+  /* .body-container{
+    display: flex;
+    flex-wrap: wrap;
+  } */
+}
+@media screen and (min-width: 401px) and (max-width: 767px) {
+  .input-box{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 5px; 
+  
+  }
+
+  input{
+    width: 40%;
+  }
+  .input-span{
+    margin-left: .5rem;
+  }
+  
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media screen and (min-width: 769px) and (max-width: 1280px)  {
+  
+  input{
+    width: 60%;
+  }
+
+  .input-span{
+    margin-left: 5px;
+  }
+
+  .input-btn{
+    margin-left: 10px;
+  }
+  
+}
+
+/* Component 2 */
+
+.body-container{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  /* align-items: center; */
 }
 
-.App-link {
-  color: #61dafb;
+.banner{
+  margin-left: 6rem;
+  margin-top: 7rem;
+}
+.banner .banner-h{
+  font-size: 45px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner .banner-p{
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-bottom: .5rem;
+ 
+}
+
+.banner-btn{
+  padding: 10px 12px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: orange;
+  border: 1px solid #575454;
+  border-radius: 5px;
+}
+
+.playlist{
+  background-color: #575454;
+  border: 1px solid #575454;
+  width: 40%;
+  margin-right: 2rem;
+  margin-top: 1.5rem;
+  height: 85vh;
 }
