@@ -3,24 +3,29 @@ import React from 'react'
 const playlist = [
   {
     id: 1,
-    title: "Changed bt Geoffrey",
+    title: "Changed by Geoffrey",
     sign: "+"
   },
   {
-    id: 1,
-    title: "Changed bt Geoffrey",
+    id: 2,
+    title: "Changed by Geoffrey",
     sign: "+"
   },
   {
-    id: 1,
-    title: "Changed bt Geoffrey",
+    id: 3,
+    title: "Changed by Geoffrey",
     sign: "+"
   },
   {
-    id: 1,
-    title: "Changed bt Geoffrey",
+    id: 4,
+    title: "Changed by Geoffrey",
     sign: "+"
   },
+  {
+    id: 5,
+    title: "Changed by Geoffrey",
+    sign: "+"
+  }
 ]
 
 function Banner() {
@@ -36,12 +41,20 @@ function Banner() {
         </div>
 
       <div className='playlist'>
+        <h3 className='playlist-h'>Trending songs</h3>
         <div className='playlist-content'>
             {
               playlist.map(list => (
-                b
+                <button key={list.id} className='title-playlist'>
+                  {list.title} 
+                  <span style={{fontWeight: "bold"}}> {/* */}
+                  {list.sign}</span>
+                </button>
               ))
             }
+        </div>
+        <div className='view-btn'>
+          <button className=' banner-btn playlist-btn'>View more</button>
         </div>
       </div>
     </div>

@@ -47,6 +47,7 @@ input{
   background-color: orange;
   border: 1px solid #575454;
   border-radius: 5px;
+  cursor: pointer;
 }
 @media screen and (min-width: 200px) and (max-width: 400px){
   input{
@@ -65,10 +66,7 @@ input{
    
   }
 
-  /* .body-container{
-    display: flex;
-    flex-wrap: wrap;
-  } */
+  
 }
 @media screen and (min-width: 401px) and (max-width: 767px) {
   .input-box{
@@ -136,13 +134,136 @@ input{
   background-color: orange;
   border: 1px solid #575454;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .playlist{
   background-color: #575454;
   border: 1px solid #575454;
-  width: 40%;
+  width: 25%;
   margin-right: 2rem;
   margin-top: 1.5rem;
-  height: 85vh;
+  height: 70vh;
+  
+}
+
+.playlist-content{
+  display: flex;
+  flex-direction: column;
+  /* gap: .8rem; */
+  margin-top: 1.5rem;
+  height: 40vh;
+  cursor: pointer;
+}
+
+.playlist-h{
+  text-align: center;
+  margin-top: 1.5rem;
+
+}
+.title-playlist{
+  padding:  10px 2px;
+  margin: auto 1rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  
+}
+.view-btn{
+  display: flex;
+  justify-content: center;
+}
+.playlist-btn{
+  margin-top: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner{
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  .banner .banner-h{
+    font-size: 30px;
+    
+  }
+  
+  .banner .banner-p{
+    font-size: 15px;
+  }
+  
+  .playlist{
+    width: 80% !important;
+    margin-right: 0rem;
+    margin-top: 1.5rem;
+    height: 40vh;
+  }
+  .playlist-h{
+    margin-top: 1rem;
+  
+  }
+  .playlist-content{
+    height: 30vh;
+    margin-top: .85rem;
+    gap: .5rem;
+    overflow-y: scroll;
+    
+  }
+  .title-playlist{
+    font-size: 15px;
+    
+  }
+  .playlist-btn{
+    margin-top: .8rem;
+   
+  }
+  
+}
+@media screen and (min-width: 501px) and (max-width: 660px) {
+  .playlist{
+    width: 45% !important;
+    height: 80vh;
+  }
+  .playlist-content{
+    height: 50vh;
+    
+  }
+  .title-playlist{
+    font-size: 15px;
+    
+  }
+  
+}
+@media screen and (max-width:900px){
+    /* .body-container{
+    display: flex;
+    justify-content: space-between;
+  } */
+  .banner{
+    margin-left: 2rem;
+   
+  }
+  .banner .banner-h{
+    font-size: 40px;
+    
+  }
+  
+  .banner .banner-p{
+    font-size: 18px;
+  }
+  
+  .playlist{
+    width: 35%;
+  }
+  
+  
 }
